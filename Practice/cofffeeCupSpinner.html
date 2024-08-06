@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Cup Spinner</title>
+    <style>
+        body {
+            background-color: #efb54a;
+            margin: 0;
+            padding: 0;
+        }
+
+        .handle {
+            width: 40px;
+            height: 70px;
+            background-color: transparent;
+            border: 6px solid white;
+            position: relative;
+            top: 0%;
+            left: 105%;
+            border-radius: 0px 30px 70px 0px;
+        }
+
+        .cup {
+            width: 180px;
+            height: 140px;
+            background-color: transparent;
+            background-position: 0 140px;
+            background-repeat: repeat-x;
+            position: absolute;
+            left: 45%;
+            top: 40%;
+            border: 6px solid white;
+            border-radius: 0px 0px 70px 70px;
+            background-image: url(/Images/coffee.png);
+            animation: fill 1s infinite;
+        }
+
+        @keyframes fill {
+            0% {
+                background-position: 0 140px;
+            }
+
+            20% {
+                background-position: -450px 100px;
+            }
+
+            60% {
+                background-position: -850px 50px;
+            }
+
+            80% {
+                background-position: -1350px -30px;
+            }
+
+            100% {
+                background-position: 0 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cup">
+        <div class="handle"></div>
+    </div>
+</body>
+</html>

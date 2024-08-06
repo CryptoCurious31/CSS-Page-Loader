@@ -1,0 +1,59 @@
+:root {
+    --body-background-color: #efb54a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background-color);
+}
+
+.coffeeCupSpinner {
+    width: 180px;
+    height: 140px;
+    background-color: transparent;
+    border: 6px solid #efb54a;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    border-radius: 0px 0px 70px 70px;
+    background-image: url(Images/coffee.png);
+    box-shadow: 0px 0px 0px 6px white;
+    background-position: 0 140px;
+    background-repeat: repeat-x;
+    animation: fill 1s infinite;
+}
+
+.handle {
+    width: 40px;
+    height: 70px;
+    background-color: transparent;
+    border: 6px solid white;
+    position: relative;
+    left: 106%;
+    top: 0px;
+    border-radius: 0px 30px 70px 0px;
+}
+
+@keyframes fill {
+    0% {
+        background-position: 0 140px;
+    }
+
+    20% {
+        background-position: -450px 100px;
+    }
+
+    40% {
+        background-position: -900px 50px;
+    }
+    
+    80% {
+        background-position: -1350px -30px;
+    }
+
+    100% {
+        background-position: 0px 140px;
+    }
+}
+
